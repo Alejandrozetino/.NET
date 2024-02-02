@@ -1,0 +1,15 @@
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\bin\Debug\net8.0\BusinessLogic.deps.json
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\bin\Debug\net8.0\BusinessLogic.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\bin\Debug\net8.0\BusinessLogic.pdb
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\refint\BusinessLogic.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.pdb
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\ref\BusinessLogic.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\bin\Debug\net8.0\EntityFramework.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\bin\Debug\net8.0\EntityFramework.pdb
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.AssemblyReference.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\BusinessLogic\obj\Debug\net8.0\BusinessLogic.csproj.CopyComplete

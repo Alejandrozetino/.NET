@@ -1,0 +1,67 @@
+﻿@using Helper
+@using Models
+@model ClientesDto
+
+<div class="card">
+    <div class="card-body" style="margin-top: 2px">
+        <div class="ml-2 align-self-center">
+            <h3 class="text-themcolor mb-o">Clientes</h3>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Home">Home</a></li>
+                <li class="breadcrumb-item active">Clientes</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="~/Clientes/Agregar" class="btn btn-default btn-primary" style="width:100px">Agregar</a>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table id="demo-foo-addrow" class="table table-bordered m-t-30 table-hover" data-paging="true" data-paging-size="7">
+                        <thead class="bg-info text-white">
+                            <tr>
+                                <th width="30%">Nombre</th>
+                                <th width="15%">Teléfono</th>
+                                <th width="30%">Dirección</th>
+                                <th width="15%">Correo</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (var item in Model.Clientes)
+                                {
+                                <tr>
+                                <td>@Html.DisplayFor(i => item.Nombre)</td>
+                                <td>@Html.DisplayFor(i => item.Telefono)</td>
+                                <td>@Html.DisplayFor(i => item.Direccion)</td>
+                                <td>@Html.DisplayFor(i => item.Correo)</td>
+                                <td>
+                                        <a href="~/Clientes/Editar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Modificar"><i class="fa fa-pencil"></i></a>
+                                        <a href="~/Clientes/Eliminar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Eliminar"> <i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="grid-container text-truncate">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

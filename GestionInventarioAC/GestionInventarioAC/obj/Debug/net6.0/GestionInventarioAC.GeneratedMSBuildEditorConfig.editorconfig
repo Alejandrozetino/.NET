@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GestionInventarioAC
+build_property.RootNamespace = GestionInventarioAC
+build_property.ProjectDir = g:\Estudio\Ruta programador\C#\GestionInventarioAC\GestionInventarioAC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = g:\Estudio\Ruta programador\C#\GestionInventarioAC\GestionInventarioAC
+build_property._RazorSourceGeneratorDebug = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Categories/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xHcmFiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Clientes/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcR3JhYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Compras/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xHcmFiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Compras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Inventories/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3JpZXNcR3JhYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Inventories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Products/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcR3JhYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Proveedores/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcR3JhYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Proveedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Ventas/Grabar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEdyYWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/Estudio/Ruta programador/C\#/GestionInventarioAC/GestionInventarioAC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j24wg89g2f

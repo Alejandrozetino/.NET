@@ -1,0 +1,63 @@
+﻿@using Helper
+@using Models
+@model CategoriasDto
+
+<div class="card">
+    <div class="card-body" style="margin-top: 2px">
+        <div class="ml-2 align-self-center">
+            <h3 class="text-themcolor mb-o">Categorias</h3>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Home">Home</a></li>
+                <li class="breadcrumb-item active">Categorias</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="~/Categories/Agregar" class="btn btn-default btn-primary" style="width:100px" name="BtnAgregar">Agregar</a>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table id="demo-foo-addrow" class="table table-bordered m-t-30 table-hover" data-paging="true" data-paging-size="7">
+                        <thead class="bg-info text-white">
+                            <tr>
+                                <th width="35%">Nombre</th>
+                                <th width="55%">Descripción</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (var item in Model.Categories)
+                                {
+                                <tr>
+                                <td>@Html.DisplayFor(i => item.Nombre)</td>
+                                <td>@Html.DisplayFor(i => item.Descripcion)</td>
+                                <td>
+                                        <a href="~/Categories/Editar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Modificar"><i class="fa fa-pencil"></i></a>
+                                        <a href="~/Categories/Eliminar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Eliminar"> <i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="grid-container text-truncate">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

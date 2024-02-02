@@ -1,0 +1,67 @@
+﻿@using Helper
+@using Models
+@model ComprasDto
+
+<div class="card">
+    <div class="card-body" style="margin-top: 2px">
+        <div class="ml-2 align-self-center">
+            <h3 class="text-themcolor mb-o">Compras</h3>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Home">Home</a></li>
+                <li class="breadcrumb-item active">Compras</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="~/Compras/Agregar" class="btn btn-default btn-primary" style="width:100px">Agregar</a>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table id="demo-foo-addrow" class="table table-bordered m-t-30 table-hover" data-paging="true" data-paging-size="7">
+                        <thead class="bg-info text-white">
+                            <tr>
+                                <th width="30%">Proveedor</th>
+                                <th width="15%">Fecha de compra</th>
+                                <th width="30%">Total</th>
+                                <th width="15%">Estado</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (var item in Model.Compras)
+                                {
+                                <tr>
+                                <td>@Html.DisplayFor(i => item.Proveedor.Nombre)</td>
+                                <td>@Html.DisplayFor(i => item.FechaCompra)</td>
+                                <td>@Html.DisplayFor(i => item.Total)</td>
+                                <td>@Html.DisplayFor(i => item.Estado)</td>
+                                <td>
+                                        <a href="~/Compras/Editar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Modificar"><i class="fa fa-pencil"></i></a>
+                                        <a href="~/Compras/Eliminar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Eliminar"> <i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="grid-container text-truncate">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

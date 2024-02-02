@@ -1,0 +1,12 @@
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\bin\Debug\net8.0\EntityFramework.deps.json
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\bin\Debug\net8.0\EntityFramework.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\bin\Debug\net8.0\EntityFramework.pdb
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.csproj.AssemblyReference.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.AssemblyInfoInputs.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.AssemblyInfo.cs
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.csproj.CoreCompileInputs.cache
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\refint\EntityFramework.dll
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\EntityFramework.pdb
+G:\Estudio\Ruta programador\C#\RestFull Api\RestFullApi\EntityFramework\obj\Debug\net8.0\ref\EntityFramework.dll

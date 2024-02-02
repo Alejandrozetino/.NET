@@ -1,0 +1,177 @@
+﻿@using Helper;
+@model Models.ClienteDto;
+
+@{
+    Layout = "_Layout";
+    string valido = "";
+}
+
+<div class="card">
+    <div class="card-body" style="margin-top: 2px">
+        <div class="ml-2 align-self-center">
+            @if(Model.TipoManto == Constants.Agregar)
+            {
+                <h3 class="text-themecolor mb-0">Creación de clientes</h3>
+            }
+            else
+            {
+                @if (Model.TipoManto == Constants.Modificar)
+                {
+                    <h3 class="text-themecolor mb-0">Modificación de cliente</h3>
+                }
+                else
+                {
+                    <h3 class="text-themecolor mb-0">Eliminación de cliente</h3>
+                }
+            }
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-2">
+		        <li class="breadcrumb-item"><a href="~/Home/Index">Home</a></li>
+                <li class="breadcrumb-item"><a href="~/Clientes/Index">Proveedores</a></li>
+                <li class="breadcrumb-item active">@Constants.MantoBoton(Model.TipoManto)</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<br/>
+
+<div class="container-fluid">
+    <div class="card" style="border:solid;top:-15px;border-color:#1e88e5;">
+        <div class="card-body">
+
+            <form asp-action="Grabar">
+                @Html.HiddenFor(model => model.Id)
+                @Html.HiddenFor(model => model.TipoManto)
+
+                <div class="tab-content border" style="margin-top:-7px">
+                    <div class="tab-pane active" id="General" style="margin-top:15px;">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Nombre</label>
+                            <div class="col-md-12">
+                                @if (!ViewData.ModelState.IsValid)
+                                {
+                                    if (ViewData.ModelState["Nombre"].ValidationState.ToString() == "Invalid")
+                                        valido = "is-invalid";
+                                }
+
+                                @if (Model.TipoManto != Constants.Eliminar)
+                                {
+                                    <input asp-for="Nombre" class="form-control @valido" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Nombre" class="form-control @valido" readonly />
+                                }
+                                <span asp-validation-for="Nombre" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Teléfono</label>
+                            <div class="col-md-12">
+                                @if (!ViewData.ModelState.IsValid)
+                                {
+                                    if (ViewData.ModelState["Telefono"].ValidationState.ToString() == "Invalid")
+                                        valido = "is-invalid";
+                                }
+
+                                @if (Model.TipoManto != Constants.Eliminar)
+                                {
+                                    <input asp-for="Telefono" class="form-control @valido" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Telefono" class="form-control @valido" readonly />
+                                }
+                                <span asp-validation-for="Telefono" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Dirección</label>
+                            <div class="col-md-12">
+                                @if (!ViewData.ModelState.IsValid)
+                                {
+                                    if (ViewData.ModelState["Direccion"].ValidationState.ToString() == "Invalid")
+                                        valido = "is-invalid";
+                                }
+
+                                @if (Model.TipoManto != Constants.Eliminar)
+                                {
+                                    <input asp-for="Direccion" class="form-control @valido" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Direccion" class="form-control @valido" readonly />
+                                }
+                                <span asp-validation-for="Direccion" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Correo</label>
+                            <div class="col-md-12">
+                                @if (!ViewData.ModelState.IsValid)
+                                {
+                                    if (ViewData.ModelState["Correo"].ValidationState.ToString() == "Invalid")
+                                        valido = "is-invalid";
+                                }
+
+                                @if (Model.TipoManto != Constants.Eliminar)
+                                {
+                                    <input asp-for="Correo" class="form-control @valido" />
+                                }
+                                else
+                                {
+                                    <input asp-for="Correo" class="form-control @valido" readonly />
+                                }
+                                <span asp-validation-for="Correo" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-info" style="margin-left:7px" name="button" value="Grabar">@Constants.MantoBoton(Model.TipoManto)</button>
+                        <button type="submit" class="btn btn-info"  name="button" value="Salir">Salir</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        @if (!ViewData.ModelState.IsValid)
+        {
+            @if (ViewData.ModelState.ContainsKey("Error"))
+			{
+				<br />
+				var error = ViewData.ModelState["Error"].Errors;
+				<div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-bottom:-0px;">
+					@foreach(var mensaje in error)
+					{
+						@Html.DisplayFor(x => mensaje.ErrorMessage)<br />
+					}
+				</div>
+			}
+        }
+        else
+        {
+            <div class="card-footer bg-info text-danger div-show" style="padding:19px;" id="PanelFooter" name="PanelFooter">
+                <div class="d-flex no-block text-white">
+                    @if(Model.TipoManto == Constants.Agregar)
+                     {
+                        @Constants.MensajeAgregar;
+                    }
+                    else
+                    {
+                        @if(Model.TipoManto == Constants.Modificar)
+                        {
+                            @Constants.MensajeEditar;
+                        }
+                        else
+                        {
+                            @Constants.MensajeEliminar;
+                        }
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

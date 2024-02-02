@@ -1,0 +1,65 @@
+﻿@using Helper
+@using Models
+@model VentasDto
+
+<div class="card">
+    <div class="card-body" style="margin-top: 2px">
+        <div class="ml-2 align-self-center">
+            <h3 class="text-themcolor mb-o">Ventas</h3>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/Home">Home</a></li>
+                <li class="breadcrumb-item active">Ventas</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="~/Ventas/Agregar" class="btn btn-default btn-primary" style="width:100px">Agregar</a>
+                <br />
+                <br />
+                <div class="table-responsive">
+                    <table id="demo-foo-addrow" class="table table-bordered m-t-30 table-hover" data-paging="true" data-paging-size="7">
+                        <thead class="bg-info text-white">
+                            <tr>
+                                <th width="45%">Cliente</th>
+                                <th width="15%">Fecha de venta</th>
+                                <th width="30%">Total</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (var item in Model.Ventas)
+                                {
+                                <tr>
+                                <td>@Html.DisplayFor(i => item.Cliente.Nombre)</td>
+                                <td>@Html.DisplayFor(i => item.FechaVenta)</td>
+                                <td>@Html.DisplayFor(i => item.Total)</td>
+                                <td>
+                                        <a href="~/Ventas/Editar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Modificar"><i class="fa fa-pencil"></i></a>
+                                        <a href="~/Ventas/Eliminar/@item.Id" class="text-inverse" data-toggle="tooltip" data-original-title="Eliminar"> <i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="grid-container text-truncate">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
